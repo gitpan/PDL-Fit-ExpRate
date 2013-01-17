@@ -1,6 +1,11 @@
 use strict;
 use warnings;
 
+my $VERSION = 0.02;
+
+# Totally unnecessary, but needed for CPAN indexing.
+package PDL::Fit::ExpRate;
+
 # Invoke PDL::PP
 my $base_name;
 BEGIN {
@@ -23,7 +28,6 @@ my $build = Module::Build->current;
 # Add the .xs file to the cleanup lists:
 $build->add_to_cleanup("$base_name.xs");
 
-our $VERSION = 0.01;
 pp_setversion($VERSION);
 
 pp_addpm <<'DOCUMENTATION';
@@ -34,7 +38,7 @@ PDL::Fit::ExpRate - fitting noisy exponential decay
 
 =head1 VERSION
 
-This document describes PDL::Fit::ExpRate version 0.01
+This document describes PDL::Fit::ExpRate version 0.02
 
 =head1 SYNOPSIS
 

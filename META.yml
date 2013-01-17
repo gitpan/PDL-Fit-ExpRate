@@ -5,21 +5,30 @@ author:
 build_requires:
   ExtUtils::CBuilder: 0
 configure_requires:
-  Module::Build: 0.39
+  Module::Build: 0.28
+  PDL: v2.4.0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: PDL-Fit-ExpRate
+no_index:
+  directory:
+    - examples
+    - t
+  file:
+    - README.pod
 provides:
   PDL::PP::Include::Fit::ExpRate:
     file: lib/PDL/PP/Include/Fit/ExpRate.pm
     version: 0
 requires:
-  PDL: 2
+  PDL: v2.4.0
   perl: v5.6.1
 resources:
+  bugtracker: http://github.com/run4flat/PDL-Fit-ExpRate/issues
   license: http://dev.perl.org/licenses/
-version: 0.01
+  repository: http://github.com/run4flat/PDL-Fit-ExpRate
+version: 0.02
